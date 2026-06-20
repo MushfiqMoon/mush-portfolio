@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Mushfiq's Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -13,54 +13,269 @@
 
 <body>
 
-
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-dark navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="/">
-        <img src="images/logo.png" alt="logo" width="35" height="35">
-        <span class="text-denger pt-2">ushfiq</span>
+      <a class="navbar-brand d-flex align-items-center" href="#about">
+        <img src="images/logo.png" alt="Mushfiq logo" width="45" height="45">
+        <span class="text-success ms-1 pt-1 fw-bold">ushfiq</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto fw-bold">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link text-white" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link text-white" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link text-white" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">About</a>
+            <a class="nav-link text-white" href="#contact">Contact</a>
           </li>
           <li class="nav-item ms-lg-3 d-flex align-items-center">
-            <a class="btn btn-info" href="resume.pdf" download>Resume <i class="bi bi-download"></i></a>
+            <a class="btn btn-success" href="resume.pdf" download>Resume <i class="bi bi-download"></i></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- banner section -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="banner-content">
+            <h1>Hello, <br>I'm Mushfiq</h1>
+            <h4>Web developer and designer</h4>
+            <p>Experienced Web Programmer with a demonstrated history of working in the Computer Software
+              industry. Strong engineering professional skilled in PHP, Laravel, CakePHP, WordPress, JavaScript, React,
+              web design, and web development.</p>
 
-  <section id="banner">
-    <div class="banner-overlay"></div>
-    <img src="images/banner.jpg" alt="banner" class="img-fluid">
+            <div class="social-links">
+              <a href="https://www.facebook.com/mushfiq013" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mushfiq-rahman" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/MushfiqMoon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end mt-4 mt-lg-0">
+          <img src="images/banner-2.jpg" alt="Mushfiq" class="img-fluid banner-photo rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="section-title text-center">My Portfolio</h2>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+
+          <div class="card portfolio-card">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <div id="carouselPortfolio1" class="carousel slide h-100">
+                  <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                      <img src="images/p1.jpg" class="d-block w-100 h-100 portfolio-carousel-img"
+                        alt="Propel Health Forward homepage">
+                    </div>
+                    <div class="carousel-item h-100">
+                      <img src="images/p2.jpg" class="d-block w-100 h-100 portfolio-carousel-img"
+                        alt="Propel Health Forward project detail">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Propel Brands Forward</h5>
+                  <p class="card-text">We listen first and understand deeply. We create communications that feel alive
+                    to the audiences that matter. Grounded in human insight and culture, we shape strategy, ideas, and
+                    channels with precision and purpose.</p>
+                  <a href="https://propelhealthforward.com/" target="_blank" rel="noopener noreferrer"
+                    class="btn  btn-outline-info">Visit Site <i class="bi bi-box-arrow-up-right"></i></a>
+
+                  <div class="skill-tags pt-2">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">Bootstrap</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card portfolio-card ">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <div id="carouselPortfolio2" class="carousel slide h-100">
+                  <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                      <img src="images/p-3.jpg" class="d-block w-100 h-100 portfolio-carousel-img"
+                        alt="Illuminate Recurrence homepage">
+                    </div>
+                    <div class="carousel-item h-100">
+                      <img src="images/p-4.jpg" class="d-block w-100 h-100 portfolio-carousel-img"
+                        alt="Illuminate Recurrence project detail">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Illuminate Your Path</h5>
+                  <p class="card-text">Living with platinum-resistant ovarian cancer can bring difficult questions and
+                    uncertainty. Hear from others who share their experiences living with platinum-resistant ovarian
+                    cancer.</p>
+                  <a href="https://www.illuminaterecurrence.com/" target="_blank" rel="noopener noreferrer"
+                    class="btn  btn-outline-info">Visit Site <i class="bi bi-box-arrow-up-right"></i></a>
+
+                    <div class="skill-tags pt-2">
+                      <span class="skill-tag">JavaScript</span>
+                      <span class="skill-tag">React</span>
+                      <span class="skill-tag">HTML</span>
+                      <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </section>
 
 
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title text-center">My Skills</h2>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="skill-group">
+            <h3 class="skill-heading">Expertise:</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">WordPress</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-heading">Comfortable:</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">CakePHP</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">jQuery</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-heading">Familiar:</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">AWS</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-heading">Tools:</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">JIRA</span>
+              <span class="skill-tag">Trello</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Figma</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="experience-panel">
+            <h3 class="experience-title">My Experience</h3>
+            <p class="experience-detail">Working at SJ Innovation</p>
+            <p class="experience-detail">as a Module Lead for the last 4 years.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Contact Me</h2>
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="contactName" placeholder="Please type your name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="contactEmail" placeholder="Please type your Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="contactMessage" rows="5" placeholder="Type here message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
+  </section>
 
-
-
-
+  <footer class="site-footer text-center">
+    <div class="container">
+      <p class="mb-0">© 2026 Mushfiq. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

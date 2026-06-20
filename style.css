@@ -1,19 +1,199 @@
-#banner {
-  position: relative;
-  overflow: hidden;
+body {
+  color: #2c2c2c;
 }
 
-#banner .banner-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 1;
-  pointer-events: none;
+.navbar {
+  background-color: #949738;
 }
 
-#banner img {
-  display: block;
-  width: 100%;
-  height: 800px;
+#about {
+  background-color: #bebc96;
+  padding: 80px 0;
+}
+
+.banner-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.banner-content h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #5c5e38;
+}
+
+.banner-content p {
+  font-size: 19px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #949738;
+  color: #fff;
+  font-size: 20px;
+
+}
+
+.social-links a:hover {
+  background-color: #7a7c2e;
+  color: #fff;
+}
+
+.banner-photo {
+  max-height: 360px;
+}
+
+#portfolio {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.portfolio-card {
+  margin-bottom: 32px;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-card:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-carousel-img {
   object-fit: cover;
+  min-height: 260px;
+}
+
+#skills {
+  background-color: #bebc96;
+  color: #2c2c2c;
+  padding: 64px 0;
+}
+
+.skill-group {
+  margin-bottom: 32px;
+}
+
+.skill-group:last-child {
+  margin-bottom: 0;
+}
+
+.skill-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #2c2c2c;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #949738;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  line-height: 1.4;
+}
+
+.experience-panel {
+  background-color: #949738;
+  color: #fff;
+  text-align: center;
+  padding: 48px 32px;
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-title {
+  color: #2c2c2c;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.experience-detail {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.experience-detail:last-child {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.site-footer {
+  background-color: #949738;
+  color: #fff;
+  padding: 24px 0;
+}
+
+@media (max-width: 768px) {
+  #about {
+    padding: 48px 0;
+  }
+
+  #portfolio {
+    padding: 48px 0;
+  }
+
+  #skills {
+    padding: 48px 0;
+  }
+
+  .banner-photo {
+    max-height: 280px;
+  }
+
+  .banner-content h1 {
+    font-size: 40px;
+  }
+
+  .banner-content h4 {
+    font-size: 20px;
+  }
+
+  .banner-content p {
+    font-size: 17px;
+  }
+
+  .experience-panel {
+    margin-top: 32px;
+    padding: 40px 24px;
+  }
+
+  .experience-title {
+    font-size: 28px;
+  }
+
+  .experience-detail {
+    font-size: 16px;
+  }
 }
